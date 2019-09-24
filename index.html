@@ -88,15 +88,25 @@
         <p>Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
     </section>
 
-    <section>
+     <form class="filter-host" method="post" action="#" >
+         <h3>Поиск гостиниц в Седоне</h3>
 
-        <h3>Поиск гостиницы в Седоне</h3>
-        <span><p>Дата заезда</p> <time datetime="2017-04-24">24 Апреля 2017</time> </span>
-        <span><p>Дата выезда</p> <time datetime="2017-06-04">4 июля 2017</time> </span>
-        <span><p>Взрослые</p> </span>
-        <span><p>Дети</p></span>
-        <button type="button">Найти</button>
-    </section>
+         <label for="for-date-on">Дата заезда:</label>
+         <input type="date" name="dane-on" id="for-date-on" value="24 Апреля 2017" placeholder="01-apr-2000">
+
+         <label for="for-date-off">Дата выезда:</label>
+         <input type="date" name="date-off" id="for-date-off" value="4 Июля 2017" placeholder="01-apr-2000">
+
+         <label for="for-adults">Взрослые</label>
+         <input type="number" name="adults" id="for-adults" value="2">
+
+         <label for="for-children">Дети</label>
+         <input type="number" name="children" id="for-children">
+
+         <button type="submit"><a href="catalog.html">Найти</a></button>
+
+     </form>
+
     <footer>
         <p>#Visitsedona</p>
 
