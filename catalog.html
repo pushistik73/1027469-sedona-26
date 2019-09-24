@@ -20,21 +20,55 @@
     <section>
         <h1 class="visually-hidden">Конфигурация отелей</h1>
 
-        <dl>
-            <dt><p>Инфракструктура</p></dt>
-            <dd><p>Басейн</p></dd>
-            <dd><p>Парковка</p></dd>
-            <dd><p>Wi-Fi</p></dd>
+        <form class="filter-hotell" method="get" action="https://echo.htmlacademy.ru">
+         <fieldset>
+          <legend>Инфрастуктура:</legend>
 
-            <dt><p>Тип жилья:</p></dt>
-            <dd><p>Гостиница</p></dd>
-            <dd><p>Мотель</p></dd>
-            <dd><p>Апартаменты</p></dd>
-        </dl>
+          <ul>
+          <li>
+            <input type="checkbox" name="pool" id="for-pool" checked>
+            <label for="for-pool">Бассейн</label>
+          </li>
+          <li>
+            <input type="checkbox" name="parcing" id="for-parcing">
+            <label for="for-parcing">Парковка</label>
+          </li>
+          <li>
+            <input type="checkbox" name="wi-fi" id="for-wi-fi">
+            <label for="for-wi-fi">Wi-Fi</label>
+          </li>
+          </ul>
 
-        <p>стоимость в сутки</p>
-        <p>от 0 до 3000</p>
-        <button type="button">Показать</button>
+         </fieldset>
+         <fieldset>
+          <legend>Тип жилья:</legend>
+
+          <ul>
+          <li>
+            <input type="checkbox" name="host" id="for-host" checked>
+            <label for="for-host">Гостиница</label>
+          </li>
+          <li>
+            <input type="checkbox" name="motel" id="for-motel" checked>
+            <label for="for-motel">Мотель</label>
+          </li>
+          <li>
+            <input type="checkbox" name="apart" id="for-apart" checked>
+            <label for="for-apart">Апартаменты</label>
+          </li>
+          </ul>
+         </fieldset>
+
+
+         <label for="for-days">
+         <p>стоимость в сутки</p>
+         <p>от 0 до 3000</p>
+         </label>
+         <input type="range" name="days" min="0" max="3000" id="for-d">
+
+        <button type="submit">Показать</button>
+
+        </form>
     </section>
 
     <section>
