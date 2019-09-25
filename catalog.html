@@ -26,15 +26,15 @@
 
           <ul>
           <li>
-            <input type="checkbox" name="pool" id="for-pool" checked>
+            <input type="checkbox" name="infostruct" value="pool" id="for-pool" checked>
             <label for="for-pool">Бассейн</label>
           </li>
           <li>
-            <input type="checkbox" name="parcing" id="for-parcing">
+            <input type="checkbox" name="infostruct" value="parcing" id="for-parcing">
             <label for="for-parcing">Парковка</label>
           </li>
           <li>
-            <input type="checkbox" name="wi-fi" id="for-wi-fi">
+            <input type="checkbox" name="infostruct" value="wi-fi" id="for-wi-fi">
             <label for="for-wi-fi">Wi-Fi</label>
           </li>
           </ul>
@@ -45,28 +45,33 @@
 
           <ul>
           <li>
-            <input type="checkbox" name="host" id="for-host" checked>
+            <input type="checkbox" name="type-zhil" value="host" id="for-host" checked>
             <label for="for-host">Гостиница</label>
           </li>
           <li>
-            <input type="checkbox" name="motel" id="for-motel" checked>
+            <input type="checkbox" name="type-zhil" value="motel" id="for-motel" checked>
             <label for="for-motel">Мотель</label>
           </li>
           <li>
-            <input type="checkbox" name="apart" id="for-apart" checked>
+            <input type="checkbox" name="type-zhil" value="apart" id="for-apart" checked>
             <label for="for-apart">Апартаменты</label>
           </li>
           </ul>
          </fieldset>
 
+         <fieldset>
+         <legend>стоимость в сутки</legend>
+         <label for="for-min">от</label>
+         <input type="nomber" name="stoimost" min="0"
+         max="2999" id="for-min" placeholder="0">
 
-         <label for="for-days">
-         <p>стоимость в сутки</p>
-         <p>от 0 до 3000</p>
-         </label>
-         <input type="range" name="days" min="0" max="3000" id="for-d">
+         <label for="for-max">до<label>
+         <input type="nomber" name="stoimost" min="1" max="3000" id="for-max" placeholder="3000">
+
+         <!--<input type="range" name="days" min="0" max="3000" id="for-d">-->
 
         <button type="submit">Показать</button>
+        </fieldset>
 
         </form>
     </section>
